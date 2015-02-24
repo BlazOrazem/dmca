@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder {
 	 * @var array
 	 */
 	private $tables = [
+		'notices',
 		'providers',
 		'users',
 	];
@@ -32,6 +33,9 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('ProviderTableSeeder');
 		$this->command->info('Providers table seeded.');
+
+		$this->call('NoticeTableSeeder');
+		$this->command->info('Notices table seeded.');
 	}
 
 	/**
