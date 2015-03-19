@@ -36,7 +36,7 @@
         <!-- Original_description Form Input -->
         <div class="form-group {{ $errors->has('original_description') ? 'has-error' : '' }}">
             {!! Form::label('original_description', 'And, finally, it might help to provide some extra information related to this DMCA notice:') !!}
-            {!! Form::text('original_description', null, ['class' => 'form-control']) !!}
+            {!! Form::textarea('original_description', null, ['class' => 'form-control']) !!}
             {!! $errors->first('original_description', '<span class="help-block">:message</span>') !!}
         </div>
 
