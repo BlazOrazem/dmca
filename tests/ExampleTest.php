@@ -4,14 +4,12 @@ class ExampleTest extends TestCase {
 
 	/**
 	 * A basic functional test example.
-	 *
+	 * @test
 	 * @return void
 	 */
-	public function testBasicExample()
+	public function is_dumb()
 	{
-		$response = $this->call('GET', '/');
-
-		$this->assertEquals(200, $response->getStatusCode());
+		$this->visit('/');
 	}
 
 }
